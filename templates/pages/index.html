@@ -345,7 +345,8 @@ http://www.tooplate.com/view/2098-health
                                    <div class="col-md-6 col-sm-6">
                                         <label for="email">Email</label>
                                         <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-                                   </div>
+                                        <i class = email-icon></i>
+                                   </div> 
 
                                    <div class="col-md-6 col-sm-6">
                                         <label for="date">Select Date</label>
@@ -374,10 +375,13 @@ http://www.tooplate.com/view/2098-health
                                    </div>
 
                                    <div class="col-md-12 col-sm-12">
-                                        <label for="telephone">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                       <div class="contain"> <label for="telephone">Phone Number</label>
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                        <i class = number></i>
+                                   </div>
                                         <Labal for="whatsapp"> Whatsapp Number</Labal>
-                                        <input type="Whatsapp" class="form-control" id="Whatsapp" name="Whatsapp" placeholder="Whatsapp">
+                                        <input type="tel" class="form-control" id="Whatsapp" name="Whatsapp" placeholder="Whatsapp">
+                                        <i class = wphone-icon></i>
                                         <input checked name="newsletter" type="radio" value="Single" /> Single <input name="newsletter" type="radio" value="Married" /> Married<br /><br />
                                         <label for="Message">Location</label>
                                         <textarea class="form-control" rows="5" id="message" name="message" placeholder="Location"></textarea>
@@ -385,6 +389,54 @@ http://www.tooplate.com/view/2098-health
                                         <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
                                         <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
                                    </div>
+                                   <script>
+                                        const input = document.querySelector("input")
+                                        emailIcon = document.queryselector(".email-icon")
+                                        input.addEventlistener("keyup",() =>{
+                                             let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                                             if(input.value === ""){
+                                                  return console.log("input is empty")
+                                             }
+                                             if(input.value.match(!pattern)){
+                                                  return console.log("input is incorrect")
+                                             }
+                                        })
+                                        let number = document.queryselector(".number");
+                                        let text = document.queryselector(".text");
+                                        let regex = /^[\d,\s,\+,\-]{5,20}/;
+                                        check.addEventlistener("click", () => {
+                                             if(number.value ==""){
+                                                  return console.log("input is empty");
+                                             }
+                                             else if(number.value.match(!regex)){
+                                                  return console.log("input is wrong")
+                                             }
+                                             else {
+                                                  text.innerText = "incorrect"
+                                             }
+                                        })
+                              
+                                   
+                                       /* const nput = document.querySelector("nput")
+                                        phoneIcon = document.queryselector(".phone-icon")
+                                        input.addEventlistener("keyup",() =>{ 
+                                             let pattern = /+[^ ]+20[^ ]+\.[1-9]{9,10}$/;
+                                              //var userInput = hit.value; 
+                                              if(nput.value === ""){
+                                                  return console.log("input is empty")
+                                             }
+                                             if(nput.value.match(!pattern)){
+                                                  return console.log("input is incorrect")
+                                             }
+                                            // let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                                            /* if(hit.value === ""){
+                                                  return console.log("input is empty")
+                                             }
+                                             if(hit.value.){
+                                                  return console.log("input is incorrect")
+                                             }
+                                        })*/
+                                   </script>
                               
                               
 
