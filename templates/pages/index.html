@@ -324,7 +324,7 @@ http://www.tooplate.com/view/2098-health
                <div class="row">
 
                     <div class="col-md-6 col-sm-6">
-                         <img src="C:\Users\SIVEEN\Desktop\project\cms\templates\pages\images\Capture.PNG" class="img-responsive" alt="">
+                         <img src="images\Capture.PNG" class="img-responsive" alt="">
                     </div>
 
                     <div class="col-md-6 col-sm-6">
@@ -339,7 +339,7 @@ http://www.tooplate.com/view/2098-health
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
                                    <div class="col-md-6 col-sm-6">
                                         <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" pattern="[a-zA-z]*">
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
@@ -350,7 +350,7 @@ http://www.tooplate.com/view/2098-health
 
                                    <div class="col-md-6 col-sm-6">
                                         <label for="date">Select Date</label>
-                                        <input type="date" name="date" value="" class="form-control">
+                                        <input type="date" name="date" value="" class="form-control" id="date">
                                    </div>
 
                                    <div class="col-md-6 col-sm-6">
@@ -376,72 +376,36 @@ http://www.tooplate.com/view/2098-health
 
                                    <div class="col-md-12 col-sm-12">
                                        <div class="contain"> <label for="telephone">Phone Number</label>
-                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
-                                        <i class = number></i>
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{11}">
+                                        <i class = phone-icon></i>
                                    </div>
                                         <Labal for="whatsapp"> Whatsapp Number</Labal>
-                                        <input type="tel" class="form-control" id="Whatsapp" name="Whatsapp" placeholder="Whatsapp">
+                                        <input type="tel" class="form-control" id="Whatsapp" name="Whatsapp" placeholder="Whatsapp" pattern="[0-9]{11}" >
                                         <i class = wphone-icon></i>
                                         <input checked name="newsletter" type="radio" value="Single" /> Single <input name="newsletter" type="radio" value="Married" /> Married<br /><br />
                                         <label for="Message">Location</label>
                                         <textarea class="form-control" rows="5" id="message" name="message" placeholder="Location"></textarea>
                                         <label for="Message">Additional Message</label>
                                         <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                                        <button type="submit" class="form-control" id="cf-submit" name="submit" onclick="Checkall(document.getElementById('phone').value,document.getElementById('name').value,document.getElementById('date').value)" >Submit Button</button>
                                    </div>
                                    <script>
-                                        const input = document.querySelector("input")
-                                        emailIcon = document.queryselector(".email-icon")
-                                        input.addEventlistener("keyup",() =>{
-                                             let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-                                             if(input.value === ""){
-                                                  return console.log("input is empty")
+                                        function Checkall(phone , name , date )
+                                        {
+                                             if ( phone == "" || name == "" || date == "" )
+                                             {
+                                                  alert("please complete needed information");
+                                                  return false;
                                              }
-                                             if(input.value.match(!pattern)){
-                                                  return console.log("input is incorrect")
+                                             else
+                                             {
+                                                  alert("process accomplished");
+                                                  return true;
                                              }
-                                        })
-                                        let number = document.queryselector(".number");
-                                        let text = document.queryselector(".text");
-                                        let regex = /^[\d,\s,\+,\-]{5,20}/;
-                                        check.addEventlistener("click", () => {
-                                             if(number.value ==""){
-                                                  return console.log("input is empty");
-                                             }
-                                             else if(number.value.match(!regex)){
-                                                  return console.log("input is wrong")
-                                             }
-                                             else {
-                                                  text.innerText = "incorrect"
-                                             }
-                                        })
+                                        }
                               
-                                   
-                                       /* const nput = document.querySelector("nput")
-                                        phoneIcon = document.queryselector(".phone-icon")
-                                        input.addEventlistener("keyup",() =>{ 
-                                             let pattern = /+[^ ]+20[^ ]+\.[1-9]{9,10}$/;
-                                              //var userInput = hit.value; 
-                                              if(nput.value === ""){
-                                                  return console.log("input is empty")
-                                             }
-                                             if(nput.value.match(!pattern)){
-                                                  return console.log("input is incorrect")
-                                             }
-                                            // let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-                                            /* if(hit.value === ""){
-                                                  return console.log("input is empty")
-                                             }
-                                             if(hit.value.){
-                                                  return console.log("input is incorrect")
-                                             }
-                                        })*/
                                    </script>
-                              
-                              
 
-
-               
                               </div>
                         </form>
                     </div>
