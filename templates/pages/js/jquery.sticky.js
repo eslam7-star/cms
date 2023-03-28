@@ -217,3 +217,28 @@
 $(document).ready(function(){
       $(".navbar-default").sticky({topSpacing:0});
     });
+    function Checkall(phone , name , date )
+    {
+         if ( phone == "" || name == "" || date == "" )
+         {
+              alert("please complete needed information");
+              return false;
+         }
+         else
+         {
+              alert("process accomplished");
+              return true;
+         }
+    }
+
+    const input = document.querySelector("input")
+    emailIcon = document.queryselector(".email-icon")
+    input.addEventlistener("keyup",() =>{
+         let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+         if(input.value === ""){
+              return console.log("input is empty")
+         }
+         if(input.value.match(!pattern)){
+              return console.log("input is incorrect")
+         }
+    })
