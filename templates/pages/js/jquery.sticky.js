@@ -224,11 +224,6 @@ $(document).ready(function(){
               alert("please complete needed information");
               return false;
          }
-         else
-         {
-              alert("process accomplished");
-              return true;
-         }
     }
 
     const input = document.querySelector("input")
