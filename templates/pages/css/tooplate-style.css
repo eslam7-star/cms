@@ -33,24 +33,25 @@ http://www.tooplate.com/view/2098-health
   }
 
   h1 {
-    color: #252525;
+    color: #4267b2;
     font-size: 5em;
   }
 
   h2 {
-    color: #272727;
+    color: #4267b2;
     font-size: 3em;
     padding-bottom: 10px;
   }
 
   h3 {
+    color: #4267b2;
     font-size: 1.8em;
     line-height: 1.2em;
     margin-bottom: 0;
   }
 
   h4 {
-    color: #454545;
+    color: #4267b2;
     font-size: 1.8em;
     padding-bottom: 2px;
   }
@@ -77,14 +78,14 @@ http://www.tooplate.com/view/2098-health
   }
 
   a {
-    color: #252525;
+    color: #4267b2;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none !important;
   }
 
   a:hover, a:active, a:focus {
-    color: #a5c422;
+    color: #dc380b;
     outline: none;
   }
 
@@ -107,7 +108,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .section-btn {
-    background: #a5c422;
+    background: #4267b2;
     border: 0;
     border-radius: 3px;
     color: #ffffff;
@@ -137,7 +138,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .btn-gray {
-    background: #393939;
+    background: #4267b2;
   }
 
   .btn-blue {
@@ -295,7 +296,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   header span i {
-    color: #a5c422;
+    color: #dc380b;
     margin-right: 5px;
   }
 
@@ -314,12 +315,12 @@ http://www.tooplate.com/view/2098-health
   }
 
   .navbar-default .navbar-brand {
-    color: #393939;
+    color: #4267b2;
     font-weight: 500;
   }
 
   .navbar-default .navbar-brand .fa {
-    color: #a5c422;
+    color: #dc380b;
   }
 
   .navbar-default .navbar-nav li.appointment-btn {
@@ -327,7 +328,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .navbar-default .navbar-nav li.appointment-btn a {
-    background: #a5c422;
+    background: #dc380b;
     border-radius: 3px;
     color: #ffffff;
     font-weight: 600;
@@ -570,7 +571,7 @@ http://www.tooplate.com/view/2098-health
   -----------------------------------------*/
 
   #service {
-    background: #a5c422;
+    background: #4267b2;
   }
 
   #service h2,
@@ -590,7 +591,7 @@ http://www.tooplate.com/view/2098-health
     font-size: 50px;
     margin-bottom: 10px;
     background: #ffffff;
-    color: #a5c422;
+    color: #dc380b;
     width: 120px;
     height: 120px;
     line-height: 120px;
@@ -742,7 +743,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .news-tags li a:hover {
-    background: #4267b2;
+    background: #6742b2;
   }
 
 
@@ -777,7 +778,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   #appointment button#cf-submit {
-    background: #a5c422;
+    background: #dc380b;
     color: #ffffff;
     font-weight: 600;
     height: 55px;
