@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\templates",
+    "\\templates\\pages"
   ],
-  "SelectedNode": "\\C:\\Users\\CompUlanD™\\Documents\\Software project",
+  "SelectedNode": "\\templates\\pages\\index.html",
   "PreviewInSolutionExplorer": false
 }
