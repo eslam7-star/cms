@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Health - Medical Website Template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+
+            <span class="spinner-rotate"></span>
+
+        </div>
+    </section>
+
+   
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-5">
+                    <p>Welcome to Bravo Beauty Clinic!</p>
+                </div>
+
+                <div class="col-md-8 col-sm-7 text-align-right">
+                    <span class="phone-icon"><i class="fa fa-phone"></i> 01027988442</span>
+                    <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 10:00 AM - 10:00 PM (Sun-Sat)</span>
+                    <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">bravoclinic600700@gmail.com</a></span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MENU -->
+    <section class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="{% static 'images/bravoLogo-removebg-preview.png' %}" alt="Bootstrap" width="80" height="30">
+                    <!-- <i class="fa fa-h-square">
+                     </i>-->
+                </a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#top" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">About Us</a></li>
+                    <li><a href="#team" class="smoothScroll">Doctors</a></li>
+                    <li><a href="#news" class="smoothScroll">News</a></li>
+                    <li><a href="#reviews" class="smoothScroll">Reviews</a></li>
+                    <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                    <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item item-first">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Let's make your life happier</h3>
+                                <h1>Healthy Living</h1>
+                                <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item-second">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Better Treatment for a better life</h3>
+                                <h1>New Lifestyle</h1>
+                                <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item item-third">
+                        <div class="caption">
+                            <div class="col-md-offset-1 col-md-10">
+                                <h3>Get the the best of a healthcare</h3>
+                                <h1>Your Health Benefits</h1>
+                                <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="about-info">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Bravo Beauty Clinic!</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.8s">
+                            <p>The clinic aims to bridge the gap between beauty and medicine. The mission is to help patients look good, feel great and stay natural.</p>
+                            <p>All treatments are delivered with safety, honesty and integrity, while leading the way into Cosmetic intervention.</p>
+                        </div>
+                        <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                            <img src="{% static 'images/author-image.jpg' %}" class="img-responsive" alt="">
+                            <figcaption>
+                                <h3>Dr. Hassan Mamdouh</h3>
+                                <p>General Principal</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TEAM -->
+    <section id="team" data-stellar-background-ratio="1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="about-info">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="{% static 'images/team-image1.jpg' %}" class="img-responsive" alt="">
+
+                        <div class="team-info">
+                            <h3>Mohamed Amer</h3>
+                            <p>
+                                <ul style="list-style-type: square;">
+                                    <li> Botox </li>
+                                    <li> Face and Lip Fillers </li>
+                                    <li> Facelift with Threads </li>
+                                    <li> Plasmage to Tighten the Eyelids </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="{% static 'images/team-image2.jpg' %}" class="img-responsive" alt="">
+
+                        <div class="team-info">
+                            <h3>Nadia Khalid</h3>
+                            <p>
+                                <ul style="list-style-type: square;">
+                                    <li> Liposuction </li>
+                                    <li> Local Fat Loss </li>
+                                    <li> Breast Augmentation and Reduction </li>
+                                    <li> Sculpting and Coordinating Textures </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="{% static 'images/team-image3.jpg' %}" class="img-responsive" alt="">
+
+                        <div class="team-info">
+                            <h3>Monica Magdy</h3>
+                            <p>
+                                <ul style="list-style-type: square;">
+                                    <li> Lasre Hair Remover </li>
+                                    <li> Removing Dark Circels Under the Eye </li>
+                                    <li> Removal of Skin Appendages and Their Effects</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="{% static 'images/team-image4.jpg' %}" class="img-responsive" alt="">
+
+                        <div class="team-info">
+                            <h3>Karim Alaa</h3>
+                            <p>
+                                <ul style="list-style-type: square;">
+                                    <li> BB Glow Sessions </li>
+                                    <li> Plasmage Skin Freshness </li>
+                                    <li> Stem Cells for Healthy hair </li>
+                                    <li> Treatment of acne and their effects </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NEWS -->
+    <section id="news" data-stellar-background-ratio="2.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <!-- SECTION TITLE -->
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>Latest News</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- NEWS THUMB -->
+                    <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
+                        <a href="">
+                            <img src="{% static 'images/news-image1.jpg' %}" class="img-responsive" alt="">
+                        </a>
+                        <div class="news-info">
+                            <span>March 08, 2023</span>
+                            <h3><a href="">About Our New Technology</a></h3>
+                            <p>
+                                We now have a new system.
+                                <br> We offer to our patients the latest technology. It is easier now for our patients to book their appointments and to view the available Doctors.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- NEWS THUMB -->
+                    <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <a href="">
+                            <img src="{% static 'images/news-image2.jpg' %}" class="img-responsive" alt="">
+                        </a>
+                        <div class="news-info">
+                            <span>February 20, 2023</span>
+                            <h3><a href="">BOTOX : A Confidant Boost In A Bottle</a></h3>
+                            <p>
+                                No more sweaty hands!
+                                <br>We introduce to you our new BOTOX shots for excessive hand sweating .Our shots are safe , quick and effective treatment for hyperhidrosis.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- NEWS THUMB -->
+                    <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                        <a href="">
+                            <img src="{% static 'images/news-image3.jpg' %}" class="img-responsive" alt="">
+                        </a>
+                        <div class="news-info">
+                            <span>January 27, 2023</span>
+                            <h3><a href="">Contact Your Doctor From Home!</a></h3>
+                            <p>We now have a service of after care that allow you to contact you doctor continuously without having to come to the clinic. You can subscribe on our service with just one click.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MAKE AN APPOINTMENT -->
+    <section id="appointment" data-stellar-background-ratio="3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6">
+                    <img src="{% static 'images\Capture.PNG' %}" class="img-responsive" alt="">
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <!-- CONTACT FORM HERE -->
+                    <form id="appointment-form" role="form" method="post" action="#">
+
+                        <!-- SECTION TITLE -->
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                            <h2>Make an appointment</h2>
+                        </div>
+
+                        <div class="wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" pattern="[a-zA-z]*">
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                <i class=email-icon></i>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <label for="date">Select Date</label>
+                                <input type="date" name="date" value="" class="form-control" id="date">
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <label for="select">Select Service</label>
+                                <select class="form-control">
+                                    <option>Botox </option>
+                                    <option>Face and Lip fillers</option>
+                                    <option>Facelift with Threads</option>
+                                    <option>Plasmage to Tighten the Eyelids </option>
+                                    <option>Lipasuction </option>
+                                    <option>Local Fat Loss </option>
+                                    <option>Breast Augmentation and Reduction </option>
+                                    <option>Sculpiting and Coordinating Textures </option>
+                                    <option>Laser Hair Removal </option>
+                                    <option>Removing Dark Circles Under the Eye </option>
+                                    <option>Removal of Skin Appendages and Their Effects </option>
+                                    <option>BB Glow Sessions </option>
+                                    <option>Plasmage Skin Freshness </option>
+                                    <option>Sterio Cells for Healthy Hair </option>
+                                    <option>Treatment of Acne and Their Effects </option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12">
+                                <div class="contain">
+                                    <label for="telephone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{11}">
+                                    <i class=phone-icon></i>
+                                </div>
+                                <Labal for="whatsapp"> Whatsapp Number</Labal>
+                                <input type="tel" class="form-control" id="Whatsapp" name="Whatsapp" placeholder="Whatsapp" pattern="[0-9]{11}">
+                                <i class=wphone-icon></i>
+                                <input checked name="newsletter" type="radio" value="Single" /> Single <input name="newsletter" type="radio" value="Married" /> Married<br /><br />
+                                <label for="Message">Location</label>
+                                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Location"></textarea>
+                                <label for="Message">Additional Message</label>
+                                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                                <button type="submit" class="form-control" id="cf-submit" name="submit" onclick="Checkall(document.getElementById('phone').value,document.getElementById('name').value,document.getElementById('date').value)">Submit Button</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <!--ADD REVIEWS-->
+        <section id="reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="reviews">
+                            <h2 class="wow fadeInUp" data-wow-delay="0.1s">Add Review</h2>
+                        </div>
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                        <div class="contain">
+                            <textarea class="form-control" rows="5" id="review" name="review" placeholder="Your Review"></textarea>
+                            <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!-- GOOGLE MAP -->
+    <section id="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13812.626325005403!2d31.3376004!3d30.0610459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e6f2824fee7%3A0x4373d0db001192ab!2sBravo%20Clinic!5e0!3m2!1sen!2seg!4v1679990090180!5m2!1sen!2seg" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer data-stellar-background-ratio="5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-thumb">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+
+                        <div class="contact-info">
+                            <p><i class="fa fa-phone"></i> 01027988442</p>
+                            <p><i class="fa fa-envelope-o"></i> <a href="#">bravoclinic600700@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-thumb">
+                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                        <div class="latest-stories">
+                            <div class="stories-image">
+                                <a href="#"><img src="{% static 'images/news-image1.jpg' %}" class="img-responsive" alt=""></a>
+                            </div>
+                            <div class="stories-info">
+                                <a href="#"><h5>Our New Technology</h5></a>
+                                <span>March 08, 2023</span>
+                            </div>
+                        </div>
+
+                        <div class="latest-stories">
+                            <div class="stories-image">
+                                <a href="#"><img src="{% static 'images/news-image2.jpg' %}" class="img-responsive" alt=""></a>                            </div>
+                            <div class="stories-info">
+                                <a href="#"><h5>BOTOX : A Confidant Boost In A Bottle</h5></a>
+                                <span>February 20, 2023</span>
+                            </div>
+                        </div>
+
+                        <div class="latest-stories">
+                            <div class="stories-image">
+                                <a href="#"><img src="{% static 'images/news-image3.jpg' %}" class="img-responsive" alt=""></a>
+                            </div>
+                            <div class="stories-info">
+                                <a href="#"><h5>Contact Your Doctor From Home</h5></a>
+                                <span>January 27, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-thumb">
+                        <div class="opening-hours">
+                            <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                            <p>Sunday - Saturday <span>10:00 AM - 10:00 PM</span></p>
+                            <p>Friday <span>Closed</span></p>
+                        </div>
+
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com/people/%D8%B9%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A8%D8%B1%D8%A7%D9%81%D9%88-Bravo-Clinic/100067396643050/" target="_blank" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 border-top">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="copyright-text">
+                            <p>
+                                Copyright &copy; 2023 Bravo Clinic
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="footer-link">
+                            <a href="#">Laboratory Tests</a>
+                            <a href="#">Departments</a>
+                            <a href="#">Insurance Policy</a>
+                            <a href="#">Careers</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 text-align-center">
+                        <div class="angle-up-btn">
+                            <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/smoothscroll.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>
