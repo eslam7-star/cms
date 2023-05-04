@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\templates",
-    "\\templates\\pages"
+    "\\templates\\pages",
+    "\\templates\\pages\\css",
+    "\\templates\\pages\\fonts",
+    "\\templates\\pages\\js"
   ],
-  "SelectedNode": "\\templates\\pages\\index.html",
+  "SelectedNode": "\\templates\\pages\\js\\jquery.js",
   "PreviewInSolutionExplorer": false
 }
