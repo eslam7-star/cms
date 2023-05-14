@@ -1,12 +1,4 @@
-﻿﻿/*
-
-Template 2098 Health
-
-http://www.tooplate.com/view/2098-health
-
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+﻿﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 
 body {
   background: #ffffff;
@@ -824,7 +816,7 @@ header span i {
       font-weight: 600;
       height: 55px;
       width: 160px;
-      margin-left: 975px;
+      margin-left: 980px;
   }
 
   #reviews button#cf-submit:hover {
@@ -834,9 +826,10 @@ header span i {
 
 
   #reviews .rate {
-  float: left;
-  height: 46px;
-  padding: 0 10px;
+      float: left;
+      height: 46px;
+      padding: 0 10px;
+      margin-top: -25px;
   }
 
   #reviews .rate:not(:checked) > input {
