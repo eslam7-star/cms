@@ -780,6 +780,21 @@ header span i {
   background: #393939;
   color: #ffffff;
 }
+#delete-form {
+  background: #dc380b;
+  color: #ffffff;
+  font-weight: 600;
+  height: 55px;
+}
+
+#result-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+
+
 
 /*---------------------------------------
     REVIEWS          
