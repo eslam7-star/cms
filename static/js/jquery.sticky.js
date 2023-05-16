@@ -237,3 +237,27 @@ $(document).ready(function(){
               return console.log("input is incorrect")
          }
     })
+    // hna el delete
+    const form = document.getElementById('delete-form');
+const idInput = document.getElementById('id');
+const deleteBtn = document.getElementById('delete-btn');
+const resultMessage = document.getElementById('result-message');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const id = idInput.value;
+  fetch('/delete-user/?user_id=' + userId, {
+    method: 'DELETE',
+  })
+  .then(response => {
+    if (response.ok) {
+      resultMessage.textContent = `Record with ID ${id} successfully deleted.`;
+    } else {
+      resultMessage.textContent = `Error deleting record with ID ${id}: ${response.statusText}`;
+    }
+  })
+  .catch(error => {
+    resultMessage.textContent = `Error deleting record with ID ${id}: ${error.message}`;
+  });
+});
+
