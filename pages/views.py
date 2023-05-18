@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from database.models import Appointment
+from database.models import Review
+from .forms import ReviewForm
 
 
 # Create your views here.
@@ -36,6 +38,13 @@ def create_appointment(request):
         return JsonResponse({'success': True, 'message': 'Appointment created successfully'})
     else:
         return render(request, 'user.html')
+
+
+def review(request):
+    if request.method == "POST":
+        form = ReviewForm(request.POST or None)
+    else:
+        return render (request, 'index.html', {})
 
   
 

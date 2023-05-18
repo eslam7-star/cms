@@ -27,4 +27,5 @@ class Appointment(models.Model):
 
 
 class Review(models.Model):
-   Review = models.TextField()
+   review = models.TextField()
+   rate = models.IntegerField(default=0)

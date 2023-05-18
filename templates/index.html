@@ -427,24 +427,28 @@
                         <div class="reviews">
                             <h2 class="wow fadeInUp" data-wow-delay="0.1s">Add Review</h2>
                         </div>
-                        <div class="rate">
-                            <input type="radio" id="star5" name="rate" value="5" />
-                            <label for="star5" title="text">5 stars</label>
-                            <input type="radio" id="star4" name="rate" value="4" />
-                            <label for="star4" title="text">4 stars</label>
-                            <input type="radio" id="star3" name="rate" value="3" />
-                            <label for="star3" title="text">3 stars</label>
-                            <input type="radio" id="star2" name="rate" value="2" />
-                            <label for="star2" title="text">2 stars</label>
-                            <input type="radio" id="star1" name="rate" value="1" />
-                            <label for="star1" title="text">1 star</label>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <div class="contain">
-                            <textarea class="form-control" rows="5" id="review" name="review" placeholder="Your Review"></textarea>
-                            <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
-                        </div>
+                        <form method="POST" action="{%url 'index'%}">
+                            {% csrf_token %}
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12">
+                                <div class="contain">
+                                <textarea class="form-control" rows="5" id="review" name="review" placeholder="Your Review"></textarea>
+                                <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
