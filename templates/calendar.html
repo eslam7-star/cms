@@ -1,0 +1,45 @@
+<!-- calendar.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar</title>
+    <style>
+        /* Calendar table styles (same as before) */
+
+        /* ... */
+
+        /* Selected date style */
+        .selected {
+            background-color: #ffebee;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        // JavaScript code
+        function handleDateSelection(element) {
+            // Remove selected class from previously selected date
+            var selectedElement = document.querySelector('.selected');
+            if (selectedElement) {
+                selectedElement.classList.remove('selected');
+            }
+
+            // Add selected class to the newly selected date
+            element.classList.add('selected');
+
+            // Update the appointment form with the selected date
+            var appointmentDateInput = document.getElementById('appointment-date');
+            appointmentDateInput.value = element.innerText;
+        }
+    </script>
+</head>
+<body>
+    <div class="col-md-6 col-sm-6">
+        <label for="date" aria-setsize="40px">{{name}}</label>
+        <select name="date" class="form-control" id="date">
+            {% for date in names %}
+                <option value="{{ names.value }}">{{ names.lable }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</body>
+</html>
