@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Client
+#from .models import Client
 from .models import Appointment
 from .models import Review
 
@@ -7,6 +7,6 @@ from .models import Review
 
 
 
-admin.site.register(Client)
+#admin.site.register(Client)
 admin.site.register(Appointment)
 admin.site.register(Review)
