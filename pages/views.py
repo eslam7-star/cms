@@ -2,8 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from database.models import Appointment
-from database.models import Review
-from .forms import ReviewForm
+from database.models import *
 
 
 # Create your views here.

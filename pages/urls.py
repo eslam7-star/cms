@@ -8,6 +8,6 @@ urlpatterns = [
     path('login_register/', views.login_register, name='login'),
     path('user', views.user, name='user' ),
     path('create-appointment/', create_appointment, name='create_appointment'),
-    
+        
 
 ]

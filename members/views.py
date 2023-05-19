@@ -5,6 +5,13 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import RegisterUserForm
 from django.core.mail import send_mail
 
+
+def index(request):
+    return render(request, "index2.html",{})
+
+
+
+
 def login_user(request):
     if request.method == "POST":
         username = request.POST['username']
@@ -13,7 +20,7 @@ def login_user(request):
         if user is not None:
             login(request, user)
             # Redirect to a success page.
-            return redirect('index')
+            return redirect('index2')
         else:
             # Return an 'invalid login' error message.
             ...
@@ -37,7 +44,7 @@ def register_user(request):
             user = authenticate(username=username, password = password)
             login(request, user)
             messages.success(request, "Sign Up Completed!")
-            return redirect('index')
+            return redirect('index2')
     else:
         form = RegisterUserForm()
     return render(request, 'authenticate/register_user.html', {
