@@ -233,3 +233,11 @@ def checkEditTime(times, day, id):
         if Appointment.objects.filter(day=day, time=k).count() < 1 or time == k:
             x.append(k)
     return x
+
+
+def chat_box(request):
+    return render(request, 'chat_box.html')
+
+
+def pharmacy(request):
+    return render(request, 'pharmacy.html')
