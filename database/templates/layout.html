@@ -46,13 +46,12 @@
                             </a>
                             <ul class="dropdown-menu  border zNav">
                               <li><a class="dropdown-item" href="{% url 'userPanel' %}">User Panel</a></li>
-                                <li><a class="dropdown-item" href="{%  url 'chatting_box' %}">chatting box</a></li>
-                                <li><a class="dropdown-item" href="{%  url 'pharmacy' %}">Pharmacy</a></li>
-                                
                               <li><hr class=""></li>
                               <li><a class="dropdown-item" href="{% url 'logout' %}">Sign Out</a></li>
                             </ul>
                         </li>
+                            <li><a class="nav-link active cHover" href="{%  url 'chatting_box' %}">chatting box</a></li>
+                            <li><a class="nav-link active cHover" href="{%  url 'pharmacy' %}">Pharmacy</a></li>
                         {% else %}
                         <li class="nav-item me-3">
                             <a class="nav-link active cHover" href="{% url 'register' %}">Sign in/Sign Up</a>

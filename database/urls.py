@@ -11,5 +11,5 @@ urlpatterns = [
     path('user-update-submit/<int:id>', views.userUpdateSubmit, name='userUpdateSubmit'),
     path('staff-panel', views.staffPanel, name='staffPanel'),
     path('', views.chat_box, name='chatting_box'),
-    path('', views.pharmacy, name='pharmacy'),
+    path('pharmacy', views.pharmacy, name='pharmacy'),
 ]
