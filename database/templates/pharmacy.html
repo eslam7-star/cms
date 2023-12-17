@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Website</title>
+    <title>Pharmacy page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -58,6 +58,15 @@
             color: white;
         }
 
+        .add-to-cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -72,7 +81,7 @@
 <body>
 
 <header>
-    <h1>Pharmacy</h1>
+    <h1>Pharmacy Website</h1>
 </header>
 
 <nav>
@@ -80,7 +89,7 @@
     <a href="#prescription-meds">Prescription Medications</a>
     <a href="#over-the-counter">Over-the-Counter Medications</a>
     <a href="#vitamins">Vitamins and Supplements</a>
-    <a href="#contact">Contact</a>
+    <a href="#cart" id="cart-link">Cart</a>
 </nav>
 
 <section id="home">
@@ -95,6 +104,7 @@
                 <th>Product Name</th>
                 <th>Strength</th>
                 <th>Price</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -102,11 +112,13 @@
                 <td>Medication A</td>
                 <td>10mg</td>
                 <td>$20.00</td>
+                <td><button class="add-to-cart-btn" onclick="addToCart('Medication A', '10mg', 20.00)">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>Medication B</td>
                 <td>20mg</td>
                 <td>$30.00</td>
+                <td><button class="add-to-cart-btn" onclick="addToCart('Medication B', '20mg', 30.00)">Add to Cart</button></td>
             </tr>
             <!-- Add more prescription medications as needed -->
         </tbody>
@@ -121,6 +133,7 @@
                 <th>Product Name</th>
                 <th>Strength</th>
                 <th>Price</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -128,11 +141,13 @@
                 <td>OTC Medication X</td>
                 <td>50mg</td>
                 <td>$15.00</td>
+                <td><button class="add-to-cart-btn" onclick="addToCart('OTC Medication X', '50mg', 15.00)">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>OTC Medication Y</td>
                 <td>75mg</td>
                 <td>$25.00</td>
+                <td><button class="add-to-cart-btn" onclick="addToCart('OTC Medication Y', '75mg', 25.00)">Add to Cart</button></td>
             </tr>
             <!-- Add more over-the-counter medications as needed -->
         </tbody>
@@ -147,6 +162,7 @@
                 <th>Product Name</th>
                 <th>Strength</th>
                 <th>Price</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -154,26 +170,58 @@
                 <td>Vitamin C</td>
                 <td>500mg</td>
                 <td>$10.00</td>
+                <td><button class="add-to-cart-btn" onclick="addToCart('Vitamin C', '500mg', 10.00)">Add to Cart</button></td>
             </tr>
             <tr>
                 <td>Fish Oil Capsules</td>
                 <td>1000mg</td>
                 <td>$15.00</td>
+                <td><button class="add-to-cart-btn" onclick="addToCart('Fish Oil Capsules', '1000mg', 15.00)">Add to Cart</button></td>
             </tr>
             <!-- Add more vitamins and supplements as needed -->
         </tbody>
     </table>
 </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@pharmacy.com</p>
-    <p>Phone: 123-456-7890</p>
+<section id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </ul>
 </section>
 
 <footer>
     &copy; 2023 Pharmacy
 </footer>
+
+<script>
+    function addToCart(productName, strength, price) {
+        // Get or initialize the cart items array from localStorage
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add the new item to the cart
+        cartItems.push({ productName, strength, price });
+
+        // Save the updated cart items back to localStorage
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+
+        // Update the cart link to indicate the number of items in the cart
+        updateCartLink(cartItems.length);
+    }
+
+    function updateCartLink(cartItemCount) {
+        const cartLink = document.getElementById('cart-link');
+        if (cartItemCount > 0) {
+            cartLink.innerText = `Cart (${cartItemCount})`;
+        } else {
+            cartLink.innerText = 'Cart';
+        }
+    }
+
+    // Load the cart items count on page load
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    updateCartLink(cartItems.length);
+</script>
 
 </body>
 </html>
